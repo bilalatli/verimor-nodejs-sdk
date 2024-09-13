@@ -1,0 +1,18 @@
+/**
+ * Enum for IYS consent sources.
+ */
+export enum IysConsentSource {
+  PHYSICAL = 'HS_FIZIKSEL_ORTAM',
+  WET_SIGNATURE = 'HS_ISLAK_IMZA',
+  WEB = 'HS_WEB',
+  CALL_CENTER = 'HS_CAGRI_MERKEZI',
+  SOCIAL_MEDIA = 'HS_SOSYAL_MEDYA',
+  EMAIL = 'HS_EPOSTA',
+  MESSAGE = 'HS_MESAJ',
+  MOBILE = 'HS_MOBIL',
+  E_ENVIRONMENT = 'HS_EORTAM',
+  EVENT = 'HS_ETKINLIK',
+  PRE_2015 = 'HS_2015',
+  ATM = 'HS_ATM',
+  DECISION = 'HS_KARAR',
+}
