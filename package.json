@@ -1,5 +1,5 @@
 {
-  "name": "verimor-sdk",
+  "name": "@bilalatli/verimor-sdk",
   "version": "1.0.0",
   "description": "A NodeJS SDK for the Verimor API",
   "main": "index.js",
