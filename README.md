@@ -1,6 +1,6 @@
 # Verimor SMS SDK
 
-**Source**: [GitHub Repository](https://github.com/bilalatli/verimor-nodejs-sdk)  
+**Source**: [GitHub Repository](https://github.com/bilalatli/verimor-nodejs-sdk)
 **Author**: Bilal ATLI
 
 A TypeScript SDK for the Verimor SMS API, providing an easy and efficient way to integrate SMS, IYS consent management,
@@ -13,19 +13,18 @@ and other functionalities into your applications.
 - [Features](#features)
 - [Installation](#installation)
 - [Getting Started](#getting-started)
-    - [Initializing the Client](#initializing-the-client)
+  - [Initializing the Client](#initializing-the-client)
 - [Usage](#usage)
-    - [Sending SMS Messages](#sending-sms-messages)
-    - [Calculating SMS Credits](#calculating-sms-credits)
-    - [Checking Account Balance](#checking-account-balance)
-    - [Retrieving Message Status](#retrieving-message-status)
-    - [Fetching Inbox Messages](#fetching-inbox-messages)
-    - [Blacklist Management](#blacklist-management)
-    - [IYS Integration](#iys-integration)
+  - [Sending SMS Messages](#sending-sms-messages)
+  - [Calculating SMS Credits](#calculating-sms-credits)
+  - [Checking Account Balance](#checking-account-balance)
+  - [Retrieving Message Status](#retrieving-message-status)
+  - [Fetching Inbox Messages](#fetching-inbox-messages)
+  - [Blacklist Management](#blacklist-management)
+  - [IYS Integration](#iys-integration)
 - [Advanced Configuration](#advanced-configuration)
-    - [Proxy Settings](#proxy-settings)
+  - [Proxy Settings](#proxy-settings)
 - [Error Handling](#error-handling)
-- [Contributing](#contributing)
 - [License](#license)
 - [Contact](#contact)
 
@@ -48,7 +47,7 @@ and other functionalities into your applications.
 Install the SDK via npm:
 
 ```bash
-npm install verimor-sdk
+npm install verimor-api-sdk
 ```
 
 ---
@@ -60,7 +59,7 @@ npm install verimor-sdk
 Import the `Verimor` client and initialize it with your API credentials:
 
 ```typescript
-import { Verimor } from 'verimor-sdk';
+import { Verimor } from 'verimor-api-sdk';
 
 const client = new Verimor('your_username', 'your_password');
 ```
@@ -204,7 +203,7 @@ import {
   IysConsentSource,
   IysConsentStatus,
   IysRecipientType,
-} from 'verimor-sdk';
+} from 'verimor-api-sdk';
 
 const consents = [
   {
@@ -266,7 +265,7 @@ client.iysApi
 If you need to route API requests through a proxy server, you can configure proxy settings when initializing the client.
 
 ```typescript
-import { Verimor, ProxyConfig } from 'verimor-sdk';
+import { Verimor, ProxyConfig } from 'verimor-api-sdk';
 
 const proxyConfig: ProxyConfig = {
   host: 'proxy.example.com',
