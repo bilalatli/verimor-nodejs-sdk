@@ -1,16 +1,9 @@
 {
   "name": "verimor-sdk",
-  "version": "2.0.0",
-  "author": "Bilal ATLI <ytbilalatli[at]gmail.com>",
+  "version": "3.0.0",
   "description": "A NodeJS SDK for the Verimor API",
   "main": "index.js",
   "types": "index.d.ts",
-  "keywords": [
-    "verimor",
-    "verimor-sdk",
-    "sms",
-    "iys"
-  ],
   "scripts": {
     "build": "tsc -p tsconfig.json",
     "prepublish": "npm run build",
@@ -20,6 +13,13 @@
     "type": "git",
     "url": "git+https://github.com/bilalatli/verimor-nodejs-sdk.git"
   },
+  "keywords": [
+    "verimor",
+    "verimor-sdk",
+    "sms",
+    "iys"
+  ],
+  "author": "Bilal ATLI <ytbilalatli[at]gmail.com>",
   "homepage": "https://github.com/bilalatli/verimor-nodejs-sdk#readme",
   "bugs": {
     "url": "https://github.com/bilalatli/verimor-nodejs-sdk/issues"
