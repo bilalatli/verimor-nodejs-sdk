@@ -1,6 +1,6 @@
 {
   "name": "verimor-sdk",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": "Bilal ATLI <ytbilalatli[at]gmail.com>",
   "description": "A NodeJS SDK for the Verimor API",
   "main": "index.js",

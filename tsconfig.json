@@ -1,6 +1,5 @@
 {
   "compilerOptions": {
-    "rootDir": "src",
     "strict": true,
     "esModuleInterop": true,
     "module": "commonjs",
