@@ -1,6 +1,6 @@
 {
   "name": "verimor-sdk",
-  "version": "3.0.0",
+  "version": "1.0.0",
   "description": "A NodeJS SDK for the Verimor API",
   "main": "index.js",
   "types": "index.d.ts",
