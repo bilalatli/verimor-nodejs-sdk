@@ -9,6 +9,7 @@ export * from './models/sender-id';
 export * from './models/blacklist-number';
 export * from './models/iys-consent';
 export * from './models/iys-campaign';
+export * from './models/proxy-config';
 
 export * from './enums/recipient-type';
 export * from './enums/iys-consent-type';

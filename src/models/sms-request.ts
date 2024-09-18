@@ -1,13 +1,29 @@
 import { RecipientType } from '../enums/recipient-type';
 
+export interface ISingleSmsRequest {
+  /**
+   * The message content
+   */
+  msg: string;
+  /**
+   * Destination phone number
+   */
+  dest: string;
+
+  /**
+   * ID of campaign item
+   */
+  id?: string;
+}
+
 /**
  * Interface representing an SMS request payload.
  */
 export interface SmsRequest {
-  /** The message content. */
-  msg: string;
-  /** Array of destination phone numbers. */
-  dest: string[];
+  /**
+   * Message array
+   */
+  messages: ISingleSmsRequest[],
   /** The sender ID. */
   source_addr?: string;
   /** Scheduled start time (ISO 8601 format). */
