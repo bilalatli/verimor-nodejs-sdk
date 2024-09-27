@@ -8,6 +8,7 @@ export * from './models/error-response';
 export * from './models/sender-id';
 export * from './models/blacklist-number';
 export * from './models/iys-consent';
+export * from './models/iys-consent-report';
 export * from './models/iys-campaign';
 export * from './models/proxy-config';
 

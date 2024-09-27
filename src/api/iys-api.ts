@@ -3,6 +3,7 @@ import { IysConsent } from '../models/iys-consent';
 import { IysCampaign } from '../models/iys-campaign';
 import { ErrorResponse } from '../models/error-response';
 import { ProxyConfig } from '../models/proxy-config';
+import { IysConsentReportItem } from '../models/iys-consent-report';
 
 /**
  * IysApi class provides methods for IYS integration.
@@ -75,7 +76,7 @@ export class IysApi extends BaseApi {
     campaignId: number,
     offset = 0,
     limit = 100,
-  ): Promise<any> {
+  ): Promise<{ total: number; status: string; source_addr: string; records?: IysConsentReportItem[] }> {
     try {
       const params = this.withCredentialsParams({ offset, limit });
       const response = await this.apiClient.get<any>(`/iys/campaigns/${campaignId}/consents`, {
